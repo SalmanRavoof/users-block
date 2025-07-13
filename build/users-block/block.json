@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "multidots/users-block",
+  "version": "0.1.0",
+  "title": "Users Block",
+  "category": "widgets",
+  "icon": "admin-users",
+  "description": "Dynamic block scaffolded with the Create Block tool to generate a list of selected user roles.",
+  "example": {},
+  "attributes": {
+    "role": {
+      "type": "string",
+      "default": "author"
+    },
+    "numberOfUsers": {
+      "type": "number",
+      "default": 8
+    }
+  },
+  "supports": {
+    "html": false,
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "align": [
+      "wide",
+      "full"
+    ],
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "textdomain": "users-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}
